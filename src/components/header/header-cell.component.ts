@@ -13,6 +13,7 @@ import { MouseEvent } from '../../events';
         *ngIf="isCheckboxable" 
         class="datatable-checkbox">
         <input 
+          tabindex="-1"
           type="checkbox"
           [checked]="allRowsSelected"
           (change)="select.emit(!allRowsSelected)" 
