@@ -16,6 +16,7 @@ import { MouseEvent, KeyboardEvent } from '../../events';
         *ngIf="column.checkboxable" 
         class="datatable-checkbox">
         <input 
+          tabindex="-1"
           type="checkbox"
           [checked]="isSelected"
           (click)="onCheckboxChange($event)" 
